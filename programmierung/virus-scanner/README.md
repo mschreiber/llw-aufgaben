@@ -1,10 +1,10 @@
-= LLW Übungsaufgabe - Viren Scanner =
+# LLW Übungsaufgabe - Viren Scanner
 
 Anfrage von: LLWsoft - Lehrlingsleistungswettbewerb Softwarelösungen
 Projektname: Binary Analyser zur Virensuche
 Ansprechpartnerin: Auri Louriod
 
-==Projektbeschreibung==
+## Projektbeschreibung
 Sehr geehrtes Entwicklerteam,
 
 im Rahmen des Lehrlingsleistungswettbewerbs für Applikationsentwickler (LLW) benötigen wir eine Software zur Analye von Binären Dateien. 
@@ -19,9 +19,9 @@ technischer oder ergonimischer Sicht sinnvoll sind.
 Im Folgenden finden sie die Anforderung an die Software:
 
 
-==Anforderungen==
+## Anforderungen
 
-===Grundfunktionalität: Zeichenfolgen zählen===
+### Grundfunktionalität: Zeichenfolgen zählen
 
 * Analysen haben ergeben, dass Dateien, in denen die Binärfolge 0xAC gefolgt von 0xAE von einem Virus befallen sind, allerdings nur dann, 
 wenn diese Folge mehr als 2 mal in der Datei vorkommt. Durch paarweise lesen von jeweils 2 bytes lässt sich das recht leicht herausfinden.
@@ -34,12 +34,12 @@ Beispiel:
 Die Software soll eine vom Benutzer angegebene Binärdatei einlesen (byteweise) und nach 0xAC 0xAE suchen und ausgeben ob sie versäucht ist oder nicht.
 Es soll auch die Anzahl gefundener Folgen ausgegeben werden.
 
-=== Filtermöglichkeit ===
+### Filtermöglichkeit
 
 Um für künftige Viren gerüstet zu sein, soll der Benutzer die Möglichkeit haben, die 2 bytes nach denen gesucht wird, angeben zu können. 
 Ebenso soll der Schwellwert ab wann es "virusverdächtig" ist, angegeben werden können.
 
-=== Statistische Auswertung einer Datei ===
+### Statistische Auswertung einer Datei
 
 Es sollen die 5 häufigsten Bytes einer Datei ausgegeben werden.
 Beispiel Ausgabe:
@@ -50,7 +50,7 @@ Beispiel Ausgabe:
 	0xAA: 5
 
 
-=== Persistente Statistik ===
+### Persistente Statistik
 
 Die Top 5 Bytes sollen über mehrere Sitzungen hinweg gespeichert werden können. 
 
