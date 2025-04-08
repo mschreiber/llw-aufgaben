@@ -72,7 +72,7 @@ Im Konsolen Programm soll es dadurch möglich sein, eine Statistik über alle Da
 <ul>
 <li>In welcher Datei wurde die Quersumme am schnellsten erreicht? Ausgabe: Dateiname und wie viel Zeichen/Zahlen</li>
 <li>Wieviele Zeichen/Zahlen braucht es pro Datei durchschnittlich bis die >=50 erreicht werden? Ausgabe: Dateiname und Durchschnitt</li>
-<li>In welcher Datei wurde in Zeile 1 am meisten Zeichen/Zahlen gebraucht um die Grenze zu erreichen? Ausgabe: Dateiname und wie viel Zeichen/Zahlen</li>
+<li>In welcher Datei wurde in Zeile 1 am wenigsten Zeichen/Zahlen gebraucht um die Grenze zu erreichen? Ausgabe: Dateiname und wie viel Zeichen/Zahlen</li>
 </ul>
 Wird mit den Dateien file1, file2, file3 aus dem data Verzeichnis die Statistik ausgegeben, muss folgendes Ergebnis angezeigt werden:
 <pre>
