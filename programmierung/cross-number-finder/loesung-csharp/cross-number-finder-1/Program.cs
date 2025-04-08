@@ -1,14 +1,14 @@
 ﻿
 const int LIMIT = 100;
 
-var fileName = getFileName();
+var fileName = GetFileName();
 var linesIterator = File.ReadLines(fileName);
 var lineCounter = 0;
 
 foreach (var line in linesIterator)
 {
   lineCounter++;
-  var crossNumber = calculateCrossNumber(line);
+  var crossNumber = CalculateCrossNumber(line);
   if (crossNumber > LIMIT)
   {
     Console.WriteLine($"Zeile {lineCounter}: {crossNumber}");
@@ -17,7 +17,7 @@ foreach (var line in linesIterator)
 
 
 // Calculates the cross number of one line
-int calculateCrossNumber(String line)
+int CalculateCrossNumber(String line)
 {
   var crossNumber = 0;
   foreach (var number in line)
@@ -31,7 +31,7 @@ int calculateCrossNumber(String line)
 
 // Get the file name either from the command line or 
 // by asking the user to enter the path 
-string getFileName()
+string GetFileName()
 {
 
   // if a file was specified as command line argument, use that

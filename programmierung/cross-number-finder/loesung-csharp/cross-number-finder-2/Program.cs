@@ -1,7 +1,7 @@
 ﻿
 const int LIMIT = 50;
 
-var fileName = getFileName();
+var fileName = GetFileName();
 var linesIterator = File.ReadLines(fileName);
 var lineCounter = 0;
 var lineWithSmallesCount = Int32.MaxValue;
@@ -10,7 +10,7 @@ var smallestCount = Int32.MaxValue;
 foreach (var line in linesIterator)
 {
   lineCounter++;
-  var crossNumberLimit = calculateCrossNumberLimit(line);
+  var crossNumberLimit = CalculateCrossNumberLimit(line);
   if (crossNumberLimit > 0 && crossNumberLimit < smallestCount)
   {
     lineWithSmallesCount = lineCounter;
@@ -22,7 +22,7 @@ Console.WriteLine($"Zeile {lineWithSmallesCount} ist die Zeile, die am schnellst
 
 
 // Calculates the cross number of one line
-int calculateCrossNumberLimit(String line)
+int CalculateCrossNumberLimit(String line)
 {
   var crossNumber = 0;
   var count = 0;
@@ -42,7 +42,7 @@ int calculateCrossNumberLimit(String line)
 
 // Get the file name either from the command line or 
 // by asking the user to enter the path 
-string getFileName()
+string GetFileName()
 {
 
   // if a file was specified as command line argument, use that
