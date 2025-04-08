@@ -1,0 +1,32 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "Launch cross-number-finder-1 With File 1",
+      "type": "coreclr",
+      "request": "launch",
+      "console": "integratedTerminal",
+      "program": "${workspaceFolder}/cross-number-finder-1/bin/Debug/net9.0/cross-number-finder-1.exe",
+      "args": ["${workspaceFolder}/../data/file1.txt"]
+    },
+    {
+      "name": "Launch cross-number-finder-2 With File 1",
+      "type": "coreclr",
+      "request": "launch",
+      "console": "integratedTerminal",
+      "program": "${workspaceFolder}/cross-number-finder-2/bin/Debug/net9.0/cross-number-finder-2.exe",
+      "args": ["${workspaceFolder}/../data/file1.txt"]
+    },
+    {
+      "name": "Launch cross-number-finder-3",
+      "type": "coreclr",
+      "request": "launch",
+      "console": "integratedTerminal",
+      "program": "${workspaceFolder}/cross-number-finder-3/bin/Debug/net9.0/cross-number-finder-3.exe",
+    }
+  ]
+}

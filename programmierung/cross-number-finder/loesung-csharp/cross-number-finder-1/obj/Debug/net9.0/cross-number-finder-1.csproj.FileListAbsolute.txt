@@ -1,0 +1,14 @@
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\bin\Debug\net9.0\cross-number-finder-1.exe
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\bin\Debug\net9.0\cross-number-finder-1.deps.json
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\bin\Debug\net9.0\cross-number-finder-1.runtimeconfig.json
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\bin\Debug\net9.0\cross-number-finder-1.dll
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\bin\Debug\net9.0\cross-number-finder-1.pdb
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\obj\Debug\net9.0\cross-number-finder-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\obj\Debug\net9.0\cross-number-finder-1.AssemblyInfoInputs.cache
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\obj\Debug\net9.0\cross-number-finder-1.AssemblyInfo.cs
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\obj\Debug\net9.0\cross-number-finder-1.csproj.CoreCompileInputs.cache
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\obj\Debug\net9.0\cross-number-finder-1.dll
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\obj\Debug\net9.0\refint\cross-number-finder-1.dll
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\obj\Debug\net9.0\cross-number-finder-1.pdb
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\obj\Debug\net9.0\cross-number-finder-1.genruntimeconfig.cache
+C:\git\llw-uebungen\cross-number-finder\loesung-csharp\cross-number-finder-1\obj\Debug\net9.0\ref\cross-number-finder-1.dll
