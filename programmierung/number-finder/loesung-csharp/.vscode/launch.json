@@ -1,0 +1,30 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C#: number-finder-1",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}\\number-finder-1\\number-finder-1.csproj",
+      "launchConfigurationId": "TargetFramework=;number-finder-1",
+    },
+    {
+      "name": "C#: number-finder-2",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}\\number-finder-2\\number-finder-2.csproj",
+      "launchConfigurationId": "TargetFramework=;number-finder-2",
+    },
+    {
+      "name": "C#: number-finder-3",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}\\number-finder-3\\number-finder-3.csproj",
+      "launchConfigurationId": "TargetFramework=;number-finder-3",
+    }
+    
+  ]
+}

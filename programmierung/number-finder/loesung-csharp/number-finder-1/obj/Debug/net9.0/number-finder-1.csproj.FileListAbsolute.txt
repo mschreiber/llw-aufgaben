@@ -1,0 +1,14 @@
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\bin\Debug\net9.0\number-finder-1.exe
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\bin\Debug\net9.0\number-finder-1.deps.json
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\bin\Debug\net9.0\number-finder-1.runtimeconfig.json
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\bin\Debug\net9.0\number-finder-1.dll
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\bin\Debug\net9.0\number-finder-1.pdb
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\obj\Debug\net9.0\number-finder-1.GeneratedMSBuildEditorConfig.editorconfig
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\obj\Debug\net9.0\number-finder-1.AssemblyInfoInputs.cache
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\obj\Debug\net9.0\number-finder-1.AssemblyInfo.cs
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\obj\Debug\net9.0\number-finder-1.csproj.CoreCompileInputs.cache
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\obj\Debug\net9.0\number-finder-1.dll
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\obj\Debug\net9.0\refint\number-finder-1.dll
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\obj\Debug\net9.0\number-finder-1.pdb
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\obj\Debug\net9.0\number-finder-1.genruntimeconfig.cache
+c:\git\llw-uebungen\number-finder\loesung-csharp\number-finder-1\obj\Debug\net9.0\ref\number-finder-1.dll
