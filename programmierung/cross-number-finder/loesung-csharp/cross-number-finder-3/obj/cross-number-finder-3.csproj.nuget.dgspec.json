@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\llw-uebungen\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\cross-number-finder-3.csproj": {}
+    "C:\\git\\llw-aufgaben\\programmierung\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\cross-number-finder-3.csproj": {}
   },
   "projects": {
-    "C:\\git\\llw-uebungen\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\cross-number-finder-3.csproj": {
+    "C:\\git\\llw-aufgaben\\programmierung\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\cross-number-finder-3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\llw-uebungen\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\cross-number-finder-3.csproj",
+        "projectUniqueName": "C:\\git\\llw-aufgaben\\programmierung\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\cross-number-finder-3.csproj",
         "projectName": "cross-number-finder-3",
-        "projectPath": "C:\\git\\llw-uebungen\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\cross-number-finder-3.csproj",
+        "projectPath": "C:\\git\\llw-aufgaben\\programmierung\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\cross-number-finder-3.csproj",
         "packagesPath": "C:\\Users\\schreibm\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\llw-uebungen\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\obj\\",
+        "outputPath": "C:\\git\\llw-aufgaben\\programmierung\\cross-number-finder\\loesung-csharp\\cross-number-finder-3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

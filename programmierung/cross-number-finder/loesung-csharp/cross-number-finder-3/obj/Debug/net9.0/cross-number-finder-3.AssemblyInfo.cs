@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cross-number-finder-3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e65dca434b60c4264477b21eccb0d39753019de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27b3231216f11f6e90c89877b19505c767b13010")]
 [assembly: System.Reflection.AssemblyProductAttribute("cross-number-finder-3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cross-number-finder-3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

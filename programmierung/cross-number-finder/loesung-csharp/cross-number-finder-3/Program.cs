@@ -5,6 +5,7 @@ const int LIMIT = 50;
 const string CONNECTION_STRING = "Data Source=crossNumber.db";
 
 
+// Prints a menu on the console
 Console.WriteLine("Quersummen Statistik Programm\n");
 Console.WriteLine("Funktionen:");
 Console.WriteLine("\t1...Datei parsen");
@@ -12,36 +13,41 @@ Console.WriteLine("\t2...Statistik anzeigen\n");
 Console.WriteLine("Wählen sie 1,2 jede andere Taste beendet das Programm");
 var consoleKey = Console.ReadKey(true);
 
+// Calls operation based on the users input
 switch (consoleKey.KeyChar)
 {
   case '1':
-    prepareDatabase();
-    parseFile();
+    PrepareDatabase();
+    ParseFile();
     break;
   case '2':
-    prepareDatabase();
-    showStatistic();
+    PrepareDatabase();
+    ShowStatistic();
     break;
 }
 
-
-void showStatistic()
+// Displays the statistic of all parsed files
+void ShowStatistic()
 {
   using (var connection = new SQLiteConnection(CONNECTION_STRING))
   {
     connection.Open();
     Console.WriteLine("Statistik:\n");
-    printFastetLimit(connection);
-    printAverages(connection);
-    printFirstLineMax(connection);
+    PrintFastetLimit(connection);
+    PrintAverages(connection);
+    PrintFirstLineMin(connection);
   }
 }
 
-void printFirstLineMax(SQLiteConnection connection)
+// Prints in which file the limit was reached
+// with the minimum amount of numbers in line 1
+// connection = the sql connection that should be used
+// Caller is responsible for closing the connection
+void PrintFirstLineMin(SQLiteConnection connection)
 {
   Console.WriteLine("Erreichen des Limits in Zeile 1:");
   var command = connection.CreateCommand();
-  command.CommandText = "select file_path, max(limit_reached_at) as max_limit_reached from files join lines on files.id = lines.file_id where lines.line_number=1 group by files.id order by max_limit_reached limit 1";
+  command.CommandText = "select file_path, min(limit_reached_at) as max_limit_reached from files join lines on files.id = lines.file_id where lines.line_number=1 group by files.id order by max_limit_reached limit 1";
   using (var reader = command.ExecuteReader())
   {
     if (reader.Read())
@@ -53,7 +59,7 @@ void printFirstLineMax(SQLiteConnection connection)
   }
 }
 
-void printFastetLimit(SQLiteConnection connection)
+void PrintFastetLimit(SQLiteConnection connection)
 {
   Console.WriteLine("Schnellstes Erreichen des Limits:");
   var command = connection.CreateCommand();
@@ -69,7 +75,7 @@ void printFastetLimit(SQLiteConnection connection)
   }
 }
 
-void printAverages(SQLiteConnection connection)
+void PrintAverages(SQLiteConnection connection)
 {
   Console.WriteLine("Durchschnitt pro Datei:");
   var command = connection.CreateCommand();
@@ -86,10 +92,10 @@ void printAverages(SQLiteConnection connection)
 }
 
 
-void parseFile()
+void ParseFile()
 {
 
-  var fileName = getFileName();
+  var fileName = GetFileName();
   var linesIterator = File.ReadLines(fileName);
   var lineCounter = 0;
   var lineWithSmallesCount = int.MaxValue;
@@ -98,24 +104,24 @@ void parseFile()
   using (var connection = new SQLiteConnection(CONNECTION_STRING))
   {
     connection.Open();
-    var fileId = insertFile(connection, fileName);
+    var fileId = InsertFile(connection, fileName);
     foreach (var line in linesIterator)
     {
       lineCounter++;
-      var crossNumberLimit = calculateCrossNumberLimit(line);
+      var crossNumberLimit = CalculateCrossNumberLimit(line);
       if (crossNumberLimit > 0 && crossNumberLimit < smallestCount)
       {
         lineWithSmallesCount = lineCounter;
         smallestCount = crossNumberLimit;
       }
       Console.WriteLine($"Zeile {lineCounter}: {crossNumberLimit}");
-      insertLine(connection, fileId, lineCounter, crossNumberLimit);
+      InsertLine(connection, fileId, lineCounter, crossNumberLimit);
     }
     Console.WriteLine($"Zeile {lineWithSmallesCount} ist die Zeile, die am schnellsten die 50 erreicht hat");
   }
 }
 
-void insertLine(SQLiteConnection connection, long fileId, int lineCounter, int crossNumberLimit)
+void InsertLine(SQLiteConnection connection, long fileId, int lineCounter, int crossNumberLimit)
 {
   var command = connection.CreateCommand();
   command.CommandText = "insert into lines(file_id, line_number, limit_reached_at) values($fileId,$lineNumber,$reachedAt)";
@@ -125,7 +131,7 @@ void insertLine(SQLiteConnection connection, long fileId, int lineCounter, int c
   command.ExecuteNonQuery();
 }
 
-long insertFile(SQLiteConnection connection, string fileName)
+long InsertFile(SQLiteConnection connection, string fileName)
 {
   var command = connection.CreateCommand();
   command.CommandText = "insert into files(file_path) values($filepath)";
@@ -134,7 +140,7 @@ long insertFile(SQLiteConnection connection, string fileName)
 }
 
 // Calculates the cross number of one line
-int calculateCrossNumberLimit(string line)
+int CalculateCrossNumberLimit(string line)
 {
   var crossNumber = 0;
   var count = 0;
@@ -154,7 +160,7 @@ int calculateCrossNumberLimit(string line)
 
 // Get the file name either from the command line or 
 // by asking the user to enter the path 
-string getFileName()
+string GetFileName()
 {
   Console.WriteLine();
   Console.WriteLine("Please specify the path to the file that should be read:");
@@ -169,7 +175,7 @@ string getFileName()
 
 
 // Check if the database contains the tables, if not create them
-void prepareDatabase()
+void PrepareDatabase()
 {
   using (var connection = new SQLiteConnection(CONNECTION_STRING))
   {
