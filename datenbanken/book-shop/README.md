@@ -28,7 +28,7 @@ Daten:
 
 
 Beachte:
-Eine Bestellung kann mehrere Bücher beinhalten. 
+Eine Bestellung kann mehrere Bücher beinhalten und ein Buch kann ich mehreren Warehouses gelagert sein.
 
 ## Aufgabe 2
 
