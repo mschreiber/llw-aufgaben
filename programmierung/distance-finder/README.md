@@ -8,14 +8,14 @@ Finde heraus, was die Summer der Unterschiede pro Zeile ist:
 4   3          Unterschied: 1 
 2   5          Unterschied: 3
 1   3          Unterschied: 2
-3   9          Unterschied: 5
+3   9          Unterschied: 6
 3   3          Unterschied: 0
 </code>
 Somit wäre bei diesem Beispiel das Ergebnis:
 <code>
-1+1+3+2+5+0 = 12
+1+1+3+2+6+0 = 13
 </code>
-Wird das Programm mit small.txt aufgerufen, kommt muss also 12 herauskommen. 
+Wird das Programm mit small.txt aufgerufen, kommt muss also 13 herauskommen. 
 Wieviel kommt mit der Datei big.txt heraus?
 
 ### Aufgabe 2 ###
