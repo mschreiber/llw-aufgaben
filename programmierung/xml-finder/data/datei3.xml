@@ -1,0 +1,30 @@
+<xml>
+  <book>
+    <title>Hello</title>
+    <author>Max Mustermann</author>
+  </book>
+  <book>
+      <title>World</title>
+      <author>Linda Musterfrau</author>
+  <book>
+    <title>I am here</title>
+  </book>
+  <book>
+    <title>I am here1</title>
+    <author>hello</author>
+  </book>
+  <book>
+    <title>I am here2</title>
+    <author></author>
+    <isbn>blub</isbn>
+  </book>
+  <book>
+    <title>I am here3</title>
+    <author></author>
+    <anothertag></anothertag>
+  <book>
+    <title>I am here3</title>
+    <author></author>
+    <anothertag></anothertag>
+  </book>
+</xml>
