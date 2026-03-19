@@ -52,7 +52,7 @@ Wie lautet das SQL Statement um die Anzahl an Bugs pro Assignee zu finden. Es so
 
 ### 2.6 Assignee mit mehr als 3 Bugs
 Nachdem die Beschwerden nicht weniger werden, möchte ihr Kunde wissen, welcher Assignee mehr als 3 Bugs hat. 
-Wie lautet das SQL Statement um die Vor- und Nachnamen und Anzahl Bugs aller Assignees auszugeben, denen mehr als 2 Bugs zugewiesen sind?
+Wie lautet das SQL Statement um die Vor- und Nachnamen und Anzahl Bugs aller Assignees auszugeben, denen mehr als 3 Bugs zugewiesen sind?
 
 ### 2.7 Bugs in einem bestimmten Zeitfenster
 Ihr Kunde vermutet, gehackt worden zu sein und gibt an, dass in der Datenbank am 03.04.2025 zwischen 8:43 und 8:44 mehr als 100 Bugs eingepflegt worden sind.
@@ -70,7 +70,7 @@ Wie lautet das SQL Statement das den Titel und das Reporting Date von den Bugs a
 
 ### 2.10 Assignee mit bestimmtem Anfangsbuchstaben
 Ihr Kunde hatte ein Gewinnspiel ausgeschrieben. Es haben alle Assignees gewonnen, deren Vorname mit einem Buchstaben von A - M beginnt.
-Wie lautet das SQL Statement, das die e-Mail Adressen aller Assignees ausgibt, deren Vorname mit a-f beginnt. Achtung: Es sollen nur die
+Wie lautet das SQL Statement, das die e-Mail Adressen aller Assignees ausgibt, deren Vorname mit a-m beginnt. Achtung: Es sollen nur die
 ausgegeben werden, die auch einen Bug assigned sind und keine doppelten Mail Adressen!
 
 ### 2.11 Open Bugs
