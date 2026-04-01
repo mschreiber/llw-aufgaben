@@ -1,0 +1,99 @@
+Datum;Start-KM;End-KM;Fahrzeugtyp;Zweck
+2025-01-02;12000;12045;PKW;Kundenbesuch Agentur Schmidt
+2025-01-02;12045;12090;PKW;Rückreise Büro
+2025-01-03;12090;12110;Motorrad;Eilzustellung Vertrag
+2025-01-04;12110;12150;PKW;Privat: Einkaufsfahrt
+2025-01-05;12150;12280;PKW;Projektmeeting Linz
+2025-01-05;12280;12410;PKW;Rückreise Linz
+2025-01-07;12410;12425;PKW;Postamt Materialabholung
+2025-01-08;12425;12500;PKW;Kundenakquise Neumarkt
+2025-01-10;12500;12515;Motorrad;Privat: Fitnessstudio
+2025-01-12;12515;12560;PKW;Wartungstermin Werkstatt
+2025-01-14;12560;12700;PKW;Schulung IT-Sicherheit
+2025-01-14;12700;12840;PKW;Rückreise Schulung
+2025-01-15;12840;12855;Motorrad;Kurierfahrt Bank
+2025-01-17;12855;12900;PKW;Privat: Familienbesuch
+2025-01-18;12900;12930;PKW;Messebesuch Vorbereitung
+2025-01-20;12930;13100;PKW;Lieferantentermin Salzburg
+2025-01-20;13100;13270;PKW;Rückreise Salzburg
+2025-01-22;13270;13290;Motorrad;Abholung Büroschlüssel
+2025-01-25;13290;13350;PKW;Privat: Ausflug See
+2025-01-27;13350;13385;PKW;Kundenberatung Vor Ort
+2025-02-01;13385;13450;PKW;Jahreshauptversammlung
+2025-02-02;13450;13480;Motorrad;Expresslieferung Dokumente
+2025-02-03;13480;13520;PKW;Privat: Baumarkt
+2025-02-05;13520;13650;PKW;Außendienst Gebiet Süd
+2025-02-05;13650;13780;PKW;Rückreise Gebiet Süd
+2025-02-07;13780;13795;PKW;Büromaterial Besorgung
+2025-02-10;13795;13850;PKW;Kundenbesuch Müller
+2025-02-12;13850;13870;Motorrad;Kurierdienst Stadtmitte
+2025-02-14;13870;13950;PKW;Privat: Valentinstag Essen
+2025-02-15;13950;14100;PKW;Netzwerktreffen Industrie
+2025-02-17;14100;14120;PKW;Fahrt zum Notar
+2025-02-19;14120;14200;PKW;Kundenbesuch Weber
+2025-02-21;14200;14215;Motorrad;Privat: Apotheke
+2025-02-23;14215;14350;PKW;Zweigstellenbesuch Graz
+2025-02-23;14350;14485;PKW;Rückreise Graz
+2025-02-25;14485;14500;PKW;Hardware Rückgabe
+2025-02-27;14500;14530;Motorrad;Dokumentenübergabe
+2025-02-28;14530;14580;PKW;Privat: Wocheneinkauf
+2025-03-02;14580;14650;PKW;Projektleitung Termin
+2025-03-05;14650;14800;PKW;Kundenakquise West
+2025-03-05;14800;14950;PKW;Rückreise West
+2025-03-07;14950;14975;Motorrad;Sonderlieferung Ersatzteil
+2025-03-10;14975;15050;PKW;Privat: Kinoabend
+2025-03-12;15050;15120;PKW;Team-Event Anreise
+2025-03-13;15120;15190;PKW;Team-Event Abreise
+2025-03-15;15190;15210;Motorrad;Kurierfahrt Zoll
+2025-03-18;15210;15300;PKW;Kundenberatung Dr. Lang
+2025-03-20;15300;15350;PKW;Privat: Sportplatz
+2025-03-22;15350;15500;PKW;Konferenz Digitalisierung
+2025-03-22;15500;15650;PKW;Rückreise Konferenz
+2025-03-25;15650;15680;Motorrad;Technik-Check vor Ort
+2025-03-28;15680;15720;PKW;Privat: Gartenmarkt
+2025-03-30;15720;15800;PKW;Abschlussgespräch Q1
+2025-04-02;15800;15850;PKW;Kundenbesuch Neubau
+2025-04-04;15850;15875;Motorrad;Privat: Post
+2025-04-06;15875;16000;PKW;Vertriebsschulung
+2025-04-06;16000;16125;PKW;Rückreise Schulung
+2025-04-09;16125;16150;PKW;Reparatur Firmenhandy
+2025-04-12;16150;16200;PKW;Privat: Wanderausflug
+2025-04-15;16200;16350;PKW;Standorteröffnung Ost
+2025-04-15;16350;16500;PKW;Rückreise Ost
+2025-04-18;16500;16520;Motorrad;Eilbrief Zustellung
+2025-04-20;16520;16600;PKW;Kundenbesuch Hofer
+2025-04-22;16600;16630;PKW;Privat: Zahnarzt
+2025-04-25;16630;16800;PKW;Fachtagung Energie
+2025-04-25;16800;16970;PKW;Rückreise Fachtagung
+2025-04-28;16970;17000;Motorrad;Abholung Visitenkarten
+2025-04-30;17000;17080;PKW;Privat: Geburtstagsfeier
+2025-05-02;17080;17150;PKW;Kundenbesuch Gruber
+2025-05-05;17150;17300;PKW;Projektstart Innsbruck
+2025-05-05;17300;17450;PKW;Rückreise Innsbruck
+2025-05-08;17450;17470;Motorrad;Privat: Bäckerei
+2025-05-10;17470;17550;PKW;Messebesuch Technik
+2025-05-12;17550;17600;PKW;Privat: Schwimmbad
+2025-05-15;17600;17650;PKW;Beratungstermin Steuern
+2025-05-18;17650;17680;Motorrad;Kurierfahrt Labor
+2025-05-20;17680;17800;PKW;Kundenbesuch Wagner
+2025-05-22;17800;17850;PKW;Privat: Möbelhaus
+2025-05-25;17850;18000;PKW;Workshop Design
+2025-05-25;18000;18150;PKW;Rückreise Workshop
+2025-05-28;18150;18170;Motorrad;Privat: Tankstelle
+2025-05-30;18170;18250;PKW;Strategiemeeting Q2
+2025-06-02;18250;18300;PKW;Privat: Baumschule
+2025-06-05;18300;18450;PKW;Kundenbesuch Dornbirn
+2025-06-05;18450;18600;PKW;Rückreise Dornbirn
+2025-06-08;18600;18625;Motorrad;Dringende Ersatzteile
+2025-06-10;18625;18700;PKW;Privat: Public Viewing
+2025-06-12;18700;18780;PKW;Abschlussveranstaltung
+2025-06-15;18780;18800;Motorrad;Privat: Eisdiele
+2025-06-18;18800;18900;PKW;Kundenbesuch Villach
+2025-06-18;18900;19000;PKW;Rückreise Villach
+2025-06-20;19000;19030;PKW;Privat: Werkstatt
+2025-06-22;19030;19150;PKW;Infrastruktur-Check
+2025-06-25;19150;19175;Motorrad;Hardware-Abholung
+2025-06-27;19175;19250;PKW;Privat: Grillabend
+2025-06-28;19250;19300;PKW;Projektübergabe
+2025-06-29;19300;19315;Motorrad;Privat: Kurze Tour
+2025-06-30;19315;19400;PKW;Inventur-Fahrt Lager
