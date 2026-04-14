@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "word-statistic", "word-statistic.csproj", "{CC067B5F-0CA5-9F1D-A9E9-194877E44F5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC067B5F-0CA5-9F1D-A9E9-194877E44F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC067B5F-0CA5-9F1D-A9E9-194877E44F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC067B5F-0CA5-9F1D-A9E9-194877E44F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC067B5F-0CA5-9F1D-A9E9-194877E44F5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A43F068-6832-44D7-A1F2-7733940F915A}
+	EndGlobalSection
+EndGlobal

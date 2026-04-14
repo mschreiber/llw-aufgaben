@@ -46,7 +46,8 @@ Motorrad-Kilometer-Geld: 81,60
 #### 3. Persistenz
 
 - Die Fahrten müssen in einer Form persistiert werden.
-- Es muss sichergestellt sein, dass pro Tag
+- Es muss sichergestellt sein, dass pro Tag und Typ nur ein Eintrag vorhanden ist.
+- Gibt es pro Tag und Typ schon einen Eintrag in der Persistenz, muss der alte gelöscht werden.
 - Es müssen die Daten persistiert werden, damit im Nachgang folgende Statistik über alle eingelesenen Dateien gemacht werden kann:
 
 #### 4. Persistente Statistik
