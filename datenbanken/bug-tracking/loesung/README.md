@@ -34,65 +34,74 @@ Ihr Kunde hat bereits eine Datenbank (siehe bugs.sqlite) und bitte sie um folgen
 Der Kunde möchte wissen, welche Bugs in seiner Datenbank nicht reproduzierbar sind.
 Wie lautet das SQL Statement um den Titel der nicht reproduierbaren Bugs heraus zu finden?
 
-```select count(*) from bugs where reproducable = false;```
+
+select count(*) from bugs where reproducable = false;
+
 
 
 ### 2.2 Anzahl UI Bugs
 Der Kunde möchte wissen, wieviel UI Bugs er hat.
 Wie lautet das SQL Statement um den Titel der Bugs auszugeben, die in der Kategorie mit dem short_name "UI" sind?
 
-```select b.title from bugs b join Categories c on b.category_id = c.category_id 
-where c.short_name = "UI"```
+
+select b.title from bugs b join Categories c on b.category_id = c.category_id where c.short_name = "UI"
+
 
 ### 2.3 Anzahl "High" Prio Bugs
 Der Kunde möchte wissen, wieviele Bugs mit der Prio High gemeldet worden sind.
 Wie lautet das SQL Statement um die Anzahl an Bugs heraus zu finden, die die Priorität "High" haben?
 
-```select count(*) from bugs b join Priorities p on b.priority_id = p.priority_id 
-where p.short_name = "High"```
+
+select count(*) from bugs b join Priorities p on b.priority_id = p.priority_id 
+where p.short_name = "High"
+
 
 ### 2.4 E-Mail Adressen der Reporter Low Prio Bugs
 Der Kunde will alle Reporter von noch Low Prio Bugs darüber informieren, dass sie nicht mehr in dieser Release gelöst werden.
 Wie lautet das SQL Statement um die E-Mail Adressen aller Bugs auszugeben, die als Priorität "Low" haben. 
 Es sollten keine Duplikate im Resultat vorhanden sein.
 
-```select distinct r.email from Reporters r 
+
+select distinct r.email from Reporters r 
 join bugs b on r.reporter_id = b.reporter_id 
 join Priorities p on p.priority_id = b.priority_id 
-where p.short_name = "Low";```
+where p.short_name = "Low";
+
 
 ### 2.5 Assignee mit den meisten Bugs
 Ein Mitarbeiter beklagt sich bei ihrem Kunden, dass er zuviele Bugs zugewiesen hat. Der Kunde bittet sie das zu überprüfen
 Wie lautet das SQL Statement um die Anzahl an Bugs pro Assignee zu finden. Es soll der Vorname und Nachname des Assignes sowie die Anzahl an Bugs als "Anzahl" ausgegeben werden und nur von den Top 5.
 
-```
+
 SELECT a.firstname, a.lastname, COUNT(*) AS Anzahl
 FROM Assignees a
 JOIN bugs b ON a.assignee_id = b.assignee_id
 GROUP BY a.assignee_id
 ORDER BY Anzahl DESC
 LIMIT 5;
-```
+
 
 ### 2.6 Assignee mit mehr als 3 Bugs
 Nachdem die Beschwerden nicht weniger werden, möchte ihr Kunde wissen, welcher Assignee mehr als 3 Bugs hat. 
 Wie lautet das SQL Statement um die Vor- und Nachnamen und Anzahl Bugs aller Assignees auszugeben, denen mehr als 3 Bugs zugewiesen sind?
 
-```
+
 SELECT a.firstname, a.lastname, COUNT(*) AS Anzahl
 FROM Assignees a
 JOIN bugs b ON a.assignee_id = b.assignee_id
 GROUP BY a.assignee_id
 HAVING COUNT(*) > 3;
-```
+
 
 ### 2.7 Bugs in einem bestimmten Zeitfenster
 Ihr Kunde vermutet, gehackt worden zu sein und gibt an, dass in der Datenbank am 03.04.2025 zwischen 8:43 und 8:44 mehr als 100 Bugs eingepflegt worden sind.
 Wie lautet das SQL Statement das alle Spalten von den Bugs ausgibt, die in dem besagten Zeitraum reported worden sind?
 
-```SELECT *
+
+SELECT *
 FROM bugs
-WHERE report_date BETWEEN '2025-04-03 08:43:00' AND '2025-04-03 08:44:00';```
+WHERE report_date BETWEEN '2025-04-03 08:43:00' AND '2025-04-03 08:44:00';
+
 
 
 ### 2.8 Bugs in denen Error vorkommt
@@ -100,19 +109,19 @@ Ihr Kunde weiß, dass es einmal mehrere Bugs gab, die etwas mit einem "404" erro
 Er möchte wissen, wer diesen Bug reported hat.
 Wie lautet das SQL Statement, dass den Vor- und Nachnamen des Reporters ausgibt, der Bugs eingepflegt hat, die im Titel "404" oder "error" haben (Case insensitiv);
 
-```
+
 SELECT DISTINCT r.firstname, r.lastname
 FROM Reporters r
 JOIN bugs b ON r.reporter_id = b.reporter_id
 WHERE LOWER(b.title) LIKE '%404%'
    OR LOWER(b.title) LIKE '%error%';
-```
+
 
 ### 2.9 Nicht zugeordnete High Prio Bugs
 Die Reporter beklagen sich bei ihrem Kunden, dass es viele Bugs gibt, die noch keiner Person zugeordnet sind. 
 Wie lautet das SQL Statement das den Titel und das Reporting Date von den Bugs ausgibt, die noch keiner Person (Assignee) zugewiesen sind?
 
-```
+
 SELECT title, report_date
 FROM bugs
 WHERE assignee_id IS NULL
@@ -121,27 +130,27 @@ WHERE assignee_id IS NULL
     FROM Priorities
     WHERE short_name = 'High'
   );
-```
+
 
 ### 2.10 Assignee mit bestimmtem Anfangsbuchstaben
 Ihr Kunde hatte ein Gewinnspiel ausgeschrieben. Es haben alle Assignees gewonnen, deren Vorname mit einem Buchstaben von A - M beginnt.
 Wie lautet das SQL Statement, das die e-Mail Adressen aller Assignees ausgibt, deren Vorname mit a-m beginnt. Achtung: Es sollen nur die
 ausgegeben werden, die auch einen Bug assigned sind und keine doppelten Mail Adressen!
-```
+
 SELECT DISTINCT a.email
 FROM Assignees a
 JOIN bugs b ON a.assignee_id = b.assignee_id
 WHERE LOWER(a.firstname) BETWEEN 'a' AND 'm';
-```
+
 
 ### 2.11 Open Bugs
 Ihr Kunde möchte wissen, wieviele Bugs auf "Open" stehen. Open sind die Bugs, die erst einen Statuswechseln in der Tabelle bug_states haben.
 Wie lautet das SQL Statement, dass alle Ids und Titel der Bugs ausgibt, bei denen es nur einen Eintrag in der bug_states tabelle gibt?
 
-```
+
 SELECT b.bug_id, b.title
 FROM bugs b
 JOIN bugstates bs ON b.bug_id = bs.bug_id
 GROUP BY b.bug_id
 HAVING COUNT(bs.bug_id) = 1;
-```
+
